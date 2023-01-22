@@ -22,7 +22,7 @@ def check_owner(func):
         else:
             HELP_TEXT = (
                 gvarstatus("HELP_TEXT")
-                or "فقط مالك البوت له صلاحيات الدخول هنا\n\@cr_source"
+                or "فقط مالك البوت له صلاحيات الدخول هنا\n\@Ch_frozen"
             )
             await c_q.answer(
                 HELP_TEXT,
