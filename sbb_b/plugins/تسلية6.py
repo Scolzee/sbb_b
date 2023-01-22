@@ -52,7 +52,7 @@ async def nekobot(cat):
     info={
         "header": "modi tweet sticker with given custom text",
         "usage": "{tr}مودي <نص>",
-        "examples": "{tr}مودي كرستين الاصلي",
+        "examples": "{tr}فروزين",
     },
 )
 async def nekobot(cat):

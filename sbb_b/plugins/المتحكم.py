@@ -152,7 +152,7 @@ async def _(event):
         return await edit_delete(
             event, "**• يبدو انك لم تقوم بأضافة مستخدم متحكم بوت فروزين الخاص بك**"
         )
-    result = "**قائمة المستخدمين المتحكمين بتنصيب جمثون :**\n\n"
+    result = "**قائمة المستخدمين المتحكمين بتنصيب فروزين :**\n\n"
     for chat in sudochats:
         result += f"**• الأسم:** {mentionuser(sudousers[str(chat)]['chat_name'],sudousers[str(chat)]['chat_id'])}\n"
         result += f"**• ايدي الدردشة :** `{chat}`\n"
