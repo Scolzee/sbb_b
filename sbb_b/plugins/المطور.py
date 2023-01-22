@@ -1,62 +1,59 @@
-from telethon import Button, events
+import random
+import re
+import time
+from platform import python_version
 
-from sbb_b import sbb_b 
+from telethon import version, Button
+from telethon.errors.rpcerrorlist import (
+    MediaEmptyError,
+    WebpageCurlFailedError,
+    WebpageMediaEmptyError,
+)
+from telethon.events import CallbackQuery
+
+from sbb_b import StartTime, sbb_b, JEPVERSION
 
 from ..Config import Config
+from ..core.managers import edit_or_reply
+from ..helpers.functions import catalive, check_data_base_heal_th, get_readable_time
+from ..helpers.utils import reply_id
+from ..sql_helper.globals import gvarstatus
+from . import mention
 
-ROZ_PIC = "https://telegra.ph/file/6cbc627ab2ab84940a615.jpg"
-RAZAN = Config.TG_BOT_USERNAME
-ROZ_T = (
-    f"**مطورين سورس فروزين **\n"
-  
+plugin_category = "utils"
+
+@sbb_b.ar_cmd(
+    pattern="المطور$",
+    command=("المطور", plugin_category),
+    info={
+        "header": "لأظهار مطورين السورس",
+        "usage": [
+            "{tr}المطور",
+        ],
+    },
 )
-
-if Config.TG_BOT_USERNAME is not None and tgbot is not None:
-
-@tgbot.on(events.InlineQuery)
-async def inline_handler(event):
-    builder = event.builder
-    result = None
-    query = event.text
-    await bot.get_me()
-    if query.startswith("المطور") and event.query.user_id == bot.uid:
-        buttons = [
-            [
-                Button.url("𝙎𝘾𝙊𝙇𝙕𝙀 𝘽𝘼𝙎𝙃𝘼 💎", "https://t.me/scolze_wa"),
-                Button.url("𝙈𝙊𝘿𝙔 𝘽𝘼𝙎𝙃𝘼💎", "https:/t.me/M_O_D_Y_00"),
-                    
-            ]
-        ]
-    if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
-        result = builder.photo(
-        ROZ_PIC, text=ROZ_T, buttons=buttons, link_preview=False
+async def amireallyalive(event):
+    "A kind of showing bot details"
+    reply_to_id = await reply_id(event)
+    uptime = await get_readable_time((time.time() - StartTime))
+    _, check_sgnirts = check_data_base_heal_th()
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
+    CUSTOM_ALIVE_TEXT = gvarstatus("ALIVE_TEXT")
+    CAT_IMG = "https://telegra.ph/file/6cbc627ab2ab84940a615.jpg"
+    if CAT_IMG:
+        CAT = [x for x in CAT_IMG.split()]
+        A_IMG = list(CAT)
+        PIC = random.choice(A_IMG)
+        cat_caption = f"مطورين سورس فروزين\n"
+        cat_caption += f"✛━━━━━━━━━━━━━✛\n"
+        cat_caption += f"- المطور  : @Scolze_WA\n"
+        cat_caption += f"- المطور  : @M0_DW\n"
+        cat_caption += f"✛━━━━━━━━━━━━━✛\n"
+        await event.client.send_file(
+            event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id
         )
-    elif ROZ_PIC:
-        result = builder.document(
-            ROZ_PIC,
-            title="JMTHON - sbb_b",
-            text=ROZ_T,
-            buttons=buttons,
-            link_preview=False,
-        )
-    else:
-        result = builder.article(
-            title="JMTHON - sbb_b",
-            text=ROZ_T,
-            buttons=buttons,
-            link_preview=False,
-        )
-    await event.answer([result] if result else None)
 
-
-@sbb_b.ar_cmd(pattern="المطور")
-async def repo(event):
-    RR7PP = Config.TG_BOT_USERNAME
-    if event.reply_to_msg_id:
-        await event.get_reply_message()
-    response = await bot.inline_query(RR7PP, "المطور")
-    await response[0].click(event.chat_id)
-    await event.delete()
-
-
-# edit by ~ @RR77R
+@sbb_b.tgbot.on(CallbackQuery(data=re.compile(b"stats")))
+async def on_plug_in_callback_query_handler(event):
+    statstext = await catalive(StartTime)
+    await event.answer(statstext, cache_time=0, alert=True)

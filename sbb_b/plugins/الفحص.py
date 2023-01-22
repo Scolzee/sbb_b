@@ -99,12 +99,12 @@ async def repo(event):
     await event.delete()
 
 
-ROZ_PIC = "https://telegra.ph/file/e31fcd025ddc59341c4a1.jpg"
+ROZ_PIC = "https://telegra.ph/file/6cbc627ab2ab84940a615.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**⌯︙بوت فروزين يعمل بنجاح 🤍،**\n"
     f"**   - اصدار التليثون :** `1.23.0\n`"
-    f"**   - اصدار فروزين :** `4.0.0`\n"
+    f"**   - اصدار فروزين :** `1.0.0`\n"
     f"**   - البوت المستخدم :** `{RAZAN}`\n"
     f"**   - اصدار البايثون :** `3.9.6\n`"
     f"**   - المستخدم :** {mention}\n"
@@ -123,6 +123,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 [
                     Button.url("قنـاة السـورس ⚙️", "https://t.me/Ch_frozen"),
                     Button.url("المطـور 👨🏼‍💻", "https://t.me/Scolze_WA"),
+                    Button.url("مبرمج السورس 👨🏼‍💻", "https://t.me/@M0_DW"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):

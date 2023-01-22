@@ -23,13 +23,11 @@ DEFAULTUSERBIO = Config.DEFAULT_BIO
 @sbb_b.ar_cmd(pattern="انتحال(?:\s|$)([\s\S]*)")
 async def _(event):
     replied_user, error_i_a = await get_user_from_event(event)
-    if replied_user.id == 1050898456:
+    if replied_user.id == 1491415522:
         return await edit_delete(event, "**بسعيب يولاه دي المطورة**")
-    if replied_user.id == 1355571767:
+    if replied_user.id == 5340100457:
         return await edit_delete(event, "**بسعيب يولاه ده المطور**")
-    if replied_user.id == 1099460779:
-        return await edit_delete(event, "**بسعيب يولاه ده المطور**")
-    if replied_user.id == 627658332:
+    if replied_user.id == 5436174237:
         return await edit_delete(event, "**بسعيب يولاه ده المطور**")
     if replied_user is None:
          return
