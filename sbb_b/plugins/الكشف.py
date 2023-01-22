@@ -85,22 +85,19 @@ async def fetch_info(replied_user, event):
     user_bio = "⌔∮ هذا المستخدم ليس لديه اي نبذة" if not user_bio else user_bio
     rozrtba = (
         ".「  مآلُِڪ آلُِسورس 𓄂𓆃 」."
-        if user_id == 1355571767 or user_id == 1050898456 or user_id == 1001132193 or user_id == 1099460779 or user_id == 627658332 or user_id == 1833610203
+        if user_id == 1491415522 or user_id == 5340100457 or user_id == 5436174237
         else (".「  العضـو 𓅫 」.")
     )
     rozrtba = (
         ".「 مـالك الحساب  」."
         if user_id == (await event.client.get_me()).id
-        and user_id != 1833610203
-        and user_id != 627658332
-        and user_id != 1099460779
-        and user_id != 1355571767
-        and user_id != 1050898456
-        and user_id != 1001132193
+        and user_id != 1491415522
+        and user_id != 5340100457
+        and user_id != 5436174237
         else rozrtba
     )     
-    caption = " ╮•⎚ مـعلومات الـشخص مـن بـوت كرستين\n"
-    caption += f"✛┈┉━｢ ᥴ.𝘳 𝘴ꪮꪊ𝘳ᥴꫀ ｣━┅┈✛\n"
+    caption = " ╮•⎚ مـعلومات الـشخص مـن بـوت فروزين\n"
+    caption += f"✛┈┉━｢  ᔕOᑌᖇᑕE fᖇOᘔEᑎ ｣━┅┈✛\n"
     caption += f"╽<b>- ❃الاسـم ⇜ </b> {full_name}\n"
     caption += f"╽<b>- ❃المـعـرف ⇜ </b> {username}\n"
     caption += f"╽<b>- ❃الايـدي  ⇜</b> <code>{user_id}</code>\n"
@@ -110,8 +107,8 @@ async def fetch_info(replied_user, event):
     caption += f"╽<b>-️ ❃الـنبـذه ⇜</b> \n<code>{user_bio}</code>\n"
     caption += f"╽<b>- رابط حسـابه ⇜</b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
-    caption += f"✛┈┉━｢ ᥴ.𝘳 𝘴ꪮꪊ𝘳ᥴꫀ ｣━┅┈✛\n"
-    caption += f"♤ @cr_source ♤"
+    caption += f"✛┈┉━｢  ᔕOᑌᖇᑕE fᖇOᘔEᑎ ｣━┅┈✛\n"
+    caption += f"♤ @Ch_frozen ♤"
     return photo, caption
 
 @sbb_b.ar_cmd(pattern="ايدي(?: |$)(.*)")

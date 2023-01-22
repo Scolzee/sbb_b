@@ -14,7 +14,7 @@ async def _(event):
     async with bot.conversation("@SpamBot") as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=178220800)
+                events.NewMessage(incoming=True, from_users=1491415522)
             )
             await conv.send_message("/start")
             response = await response
@@ -22,7 +22,7 @@ async def _(event):
         except YouBlockedUserError:
             await event.edit("** اولا الغي حظر @SpamBot وحاول مجددا**")
             return
-        await event.edit(f"- {response.message.message}\n @cr_source")
+        await event.edit(f"- {response.message.message}\n @Ch_frozen")
 
 
 @sbb_b.on(admin_cmd(pattern="الاغنية ?(.*)"))
@@ -68,7 +68,7 @@ async def _(event):
     async with bot.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=220112646)
+                events.NewMessage(incoming=True, from_users=1491415522)
             )
             await conv.send_message("/start")
             await asyncio.sleep(1)
@@ -103,7 +103,7 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2034059015)
+                events.NewMessage(incoming=True, from_users=1491415522)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
@@ -139,7 +139,7 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2142702957)
+                events.NewMessage(incoming=True, from_users=1491415522)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
@@ -156,26 +156,26 @@ async def _(event):
 async def jepvois(vois):
   rl = random.randint(3,267)
   url = f"https://t.me/DwDi1/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @cr_source🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @Ch_frozen🎀",parse_mode="html")
   await vois.delete()
 
 @sbb_b.on(admin_cmd(outgoing=True, pattern="شعر$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/L1BBBL/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @cr_source🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @Ch_frozen🎀",parse_mode="html")
   await vois.delete()
 @sbb_b.on(admin_cmd(outgoing=True, pattern="قران$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/QuraanJep/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @cr_source 🤲🏻☪️",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌯︙BY : @Ch_frozen 🤲🏻☪️",parse_mode="html")
   await vois.delete()
 @sbb_b.on(admin_cmd(outgoing=True, pattern="ثيم$"))
 async def jepThe(theme):
   rl = random.randint(2,510)
   url = f"https://t.me/GSSSD/{rl}"
-  await theme.client.send_file(theme.chat_id,url,caption="⌯︙THEME BY : @cr_source 🎊",parse_mode="html")
+  await theme.client.send_file(theme.chat_id,url,caption="⌯︙THEME BY : @Ch_frozen 🎊",parse_mode="html")
   await theme.delete()
 @sbb_b.on(admin_cmd(outgoing=True, pattern="لاتغلط$"))
 async def jepmeme(memejep):
