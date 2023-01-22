@@ -23,7 +23,7 @@ from . import mention
 plugin_category = "utils"
 
 @sbb_b.ar_cmd(
-    pattern="المطور$",
+    pattern="المطور(?:\s|$)([\s\S]*)",
     command=("المطور", plugin_category),
     info={
         "header": "لأظهار مطورين السورس",

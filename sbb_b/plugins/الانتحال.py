@@ -24,7 +24,7 @@ DEFAULTUSERBIO = Config.DEFAULT_BIO
 async def _(event):
     replied_user, error_i_a = await get_user_from_event(event)
     if replied_user.id == 1491415522:
-        return await edit_delete(event, "**بسعيب يولاه دي المطورة**")
+        return await edit_delete(event, "**بسعيب يولاه دي المطور**")
     if replied_user.id == 5340100457:
         return await edit_delete(event, "**بسعيب يولاه ده المطور**")
     if replied_user.id == 5436174237:

@@ -19,8 +19,7 @@ async def permalink(mention):
     await edit_or_reply(
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه بڪلبك 🖤 "
     )
-
-
+    
 @sbb_b.ar_cmd(pattern="رفع زوجي(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -33,8 +32,7 @@ async def permalink(mention):
         mention,
         f"- المستخدم [{tag}](tg://user?id={user.id}) \nتـم رفعه زوجج روحوا خلفوا 🤤😂",
     )
-
-
+    
 @sbb_b.ar_cmd(pattern="رفع مطي(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -50,7 +48,6 @@ async def permalink(mention):
     await edit_or_reply(
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n تـم رفـعه مطي هـنا "
     )
-
 
 @sbb_b.ar_cmd(pattern="رفع مرتي(?: |$)(.*)")
 async def permalink(mention):
@@ -93,7 +90,6 @@ async def mention(mention):
     reza = random.choice(kttwerz)
     await edit_or_reply(mention, f"**- {reza}**")
 
-
 @sbb_b.ar_cmd(pattern="هينه(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -109,7 +105,6 @@ async def permalink(mention):
     sos = random.choice(hena)
     await edit_or_reply(mention, f"{sos} .")
 
-
 @sbb_b.ar_cmd(pattern="نسبة الحب(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -118,7 +113,7 @@ async def permalink(mention):
     if user.id == 1491415522:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
     if user.id == 5340100457:
-        return await edit_or_reply(mention, f"**- لكك دي هذه المطورة قمورة وعلى راسك**")
+        return await edit_or_reply(mention, f"**- لكك دي هذه المطور قمورة وعلى راسك**")
     if user.id == 5436174237:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
@@ -127,24 +122,22 @@ async def permalink(mention):
         mention, f"نـسـبتكم انـت و [{muh}](tg://user?id={user.id}) هـي {rza} 😔🖤"
     )
 
-
 @sbb_b.ar_cmd(pattern="نسبة الانوثة(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
     if user.id == 1491415522:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
     if user.id == 5340100457:
-        return await edit_or_reply(mention, f"**- لكك دي هذه المطورة قمورة وعلى راسك**")
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
     if user.id == 5436174237:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     sos = random.choice(rr7)
     await edit_or_reply(
         mention, f"- نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤"
     )
-
 
 @sbb_b.ar_cmd(pattern="نسبة الغباء(?: |$)(.*)")
 async def permalink(mention):
@@ -163,6 +156,37 @@ async def permalink(mention):
         mention, f"نسبة الغباء لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 😂💔"
     )
 
+@sbb_b.ar_cmd(pattern="نسبة الكذب(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 1491415522:
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
+    if user.id == 5340100457:
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
+    if user.id == 5436174237:
+        return await edit_or_reply(mention, f"**0% ♥🙂**")
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    rzona = random.choice(rr7)
+    await edit_or_reply(mention, f"نسبة الكذب لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 😂💔")
+
+@sbb_b.ar_cmd(pattern="نسبة الرجولة(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 1491415522:
+        return await edit_or_reply(mention, f"**100%**")
+    if user.id == 5340100457:
+        return await edit_or_reply(mention, f"**100%**")
+    if user.id == 5436174237:
+        return await edit_or_reply(mention, f"**100%**")
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    rzona = random.choice(kz)
+    await edit_or_reply(
+        mention, f"- نسبة الرجولة لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 🥵🖤"
+    )
 
 @sbb_b.ar_cmd(pattern="رفع تاج(?: |$)(.*)")
 async def permalink(mention):
@@ -175,7 +199,6 @@ async def permalink(mention):
     await edit_or_reply(
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n تـم رفعـه تاج 👑🔥"
     )
-
 
 @sbb_b.ar_cmd(pattern="رفع قرد(?: |$)(.*)")
 async def permalink(mention):
@@ -194,7 +217,6 @@ async def permalink(mention):
         f"- المستخدم [{tag}](tg://user?id={user.id}) \n تـم رفعـه قرد واعطائه موزة 🐒🍌",
     )
 
-
 @sbb_b.ar_cmd(pattern="اوصف(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -203,7 +225,6 @@ async def permalink(mention):
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     rzona = random.choice(osfroz)
     await edit_or_reply(mention, f"{rzona}")
-
 
 @sbb_b.ar_cmd(pattern="شغله(?: |$)(.*)")
 async def permalink(mention):
@@ -215,25 +236,6 @@ async def permalink(mention):
     await edit_or_reply(
         mention, f"- المستخدم [{muh}](tg://user?id={user.id}) شغله هو {rezw}"
     )
-
-
-@sbb_b.ar_cmd(pattern="نسبة الرجولة(?: |$)(.*)")
-async def permalink(mention):
-    user, custom = await get_user_from_event(mention)
-    if not user:
-        return
-    if user.id == 1491415522:
-        return await edit_or_reply(mention, f"**100%**")
-    if user.id == 5340100457:
-        return await edit_or_reply(mention, f"**100%**")
-    if user.id == 5436174237:
-        return await edit_or_reply(mention, f"**100%**")
-    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    sos = random.choice(kz)
-    await edit_or_reply(
-        mention, f"- نسبة الرجولة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤"
-    )
-
 
 @sbb_b.ar_cmd(pattern="رفع حيوان(?: |$)(.*)")
 async def permalink(mention):
@@ -253,7 +255,6 @@ async def permalink(mention):
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه حيوان 🐏"
     )
 
-
 @sbb_b.ar_cmd(pattern="رفع بزون(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -271,7 +272,6 @@ async def permalink(mention):
     await edit_or_reply(
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه بزون 🐈"
     )
-
 
 @sbb_b.ar_cmd(pattern="رفع زاحف(?: |$)(.*)")
 async def permalink(mention):
@@ -319,31 +319,9 @@ async def mention(mention):
         return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
     await edit_or_reply(mention, f"**طالق طالق بالعشرة 😹😭💕 ܰ**")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الكذب(?:\s|$)([\s\S]*)",
-    command=("نسبة الكذب", plugin_category),
-)
-async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
-    user, custom = await get_user_from_event(mention)
-    if not user:
-        return
-    if user.id == 1491415522:
-        return await edit_or_reply(mention, f"**0% ♥🙂**")
-    if user.id == 5340100457:
-        return await edit_or_reply(mention, f"**0% ♥🙂**")
-    if user.id == 5436174237:
-        return await edit_or_reply(mention, f"**0% ♥🙂**")
-    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    rzona = random.choice(rr7)
-    await edit_or_reply(mention, f"نسبة الكذب لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 😂💔")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الذكاء(?:\s|$)([\s\S]*)",
-    command=("نسبة الذكاء", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الذكاء(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
@@ -357,12 +335,8 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة الذكاء لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الشذوذ(?:\s|$)([\s\S]*)",
-    command=("نسبة الشذوذ", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الشذوذ(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
@@ -376,12 +350,8 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة الشذوذ 🏳️‍🌈 لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الدياثه(?:\s|$)([\s\S]*)",
-    command=("نسبة الدياثه", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الدياثه(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
@@ -395,12 +365,8 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة الدياثه لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الخيانه(?:\s|$)([\s\S]*)",
-    command=("نسبة الخيانه", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الخيانه(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
@@ -414,12 +380,8 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة الخيانه 🙎🏼‍♀️ لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الجمال(?:\s|$)([\s\S]*)",
-    command=("نسبة الجمال", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الجمال(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
@@ -433,12 +395,8 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة جماله 👩🏻‍🦳🧑🏻 لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@sbb_b.ar_cmd(
-    pattern="نسبة الهيجان(?:\s|$)([\s\S]*)",
-    command=("نسبة الهيجان", plugin_category),
-)
+@sbb_b.ar_cmd(pattern="نسبة الهيجان(?: |$)(.*)")
 async def permalink(mention):
-    """Generates a link to the user s PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return

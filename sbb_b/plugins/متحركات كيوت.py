@@ -11,7 +11,7 @@ from . import *
 
 plugin_category = "extra"
 @sbb_b.ar_cmd(
-    pattern="ك1$",
+    pattern="ك1(?:\s|$)([\s\S]*)",
     command=("ك1", plugin_category),
            )
 async def tmgif(event):
@@ -28,7 +28,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك2$",
+    pattern="ك2(?:\s|$)([\s\S]*)",
     command=("ك2", plugin_category),
            )
 async def tmgif(event):
@@ -45,7 +45,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك3$",
+    pattern="ك3(?:\s|$)([\s\S]*)",
     command=("ك3", plugin_category),
            )
 async def tmgif(event):
@@ -62,7 +62,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك4$",
+    pattern="ك4(?:\s|$)([\s\S]*)",
     command=("ك4", plugin_category),
            )
 async def tmgif(event):
@@ -81,7 +81,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك5$",
+    pattern="ك5(?:\s|$)([\s\S]*)",
     command=("ك5", plugin_category),
            )
 
@@ -101,7 +101,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك6$",
+    pattern="ك6(?:\s|$)([\s\S]*)",
     command=("ك6", plugin_category),
            )
 
@@ -121,7 +121,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="ك7$",
+    pattern="ك7(?:\s|$)([\s\S]*)",
     command=("ك7", plugin_category),
            )
 async def tmgif(event):

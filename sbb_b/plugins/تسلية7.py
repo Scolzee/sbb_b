@@ -16,7 +16,7 @@ plugin_category = "fun"
 
 
 @sbb_b.ar_cmd(
-    pattern="تراش$",
+    pattern="تراش(?:\s|$)([\s\S]*)",
     command=("تراش", plugin_category),
     info={
         "header": "Reply to image/sticker to get meme on that image.",
@@ -56,7 +56,7 @@ async def catbot(event):
 
 
 @sbb_b.ar_cmd(
-    pattern="تهديد$",
+    pattern="تهديد(?:\s|$)([\s\S]*)",
     command=("تهديد", plugin_category),
     info={
         "header": "Reply to image/sticker to get meme on that image.",

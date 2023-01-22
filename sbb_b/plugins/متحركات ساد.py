@@ -9,7 +9,7 @@ from . import *
 
 plugin_category = "extra"
 @sbb_b.ar_cmd(
-    pattern="س1$",
+    pattern="س1(?:\s|$)([\s\S]*)",
     command=("س1", plugin_category),
            )
 async def tmgif(event):
@@ -26,7 +26,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س2$",
+    pattern="س2(?:\s|$)([\s\S]*)",
     command=("س2", plugin_category),
            )
 async def tmgif(event):
@@ -43,7 +43,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س3$",
+    pattern="س3(?:\s|$)([\s\S]*)",
     command=("س3", plugin_category),
            )
 async def tmgif(event):
@@ -60,7 +60,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س4$",
+    pattern="س4(?:\s|$)([\s\S]*)",
     command=("س4", plugin_category),
            )
 async def tmgif(event):
@@ -79,7 +79,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س5$",
+    pattern="س5(?:\s|$)([\s\S]*)",
     command=("س5", plugin_category),
            )
 
@@ -99,7 +99,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س6$",
+    pattern="س6(?:\s|$)([\s\S]*)",
     command=("س6", plugin_category),
            )
 
@@ -119,7 +119,7 @@ async def tmgif(event):
 #جميع الحقوق محفوظة لسـورس جـيبثون تخـمط تبيـن فشلـك
 
 @sbb_b.ar_cmd(
-    pattern="س7$",
+    pattern="س7(?:\s|$)([\s\S]*)",
     command=("س7", plugin_category),
            )
 async def tmgif(event):
@@ -136,7 +136,7 @@ async def tmgif(event):
       
       
 @sbb_b.ar_cmd(
-    pattern="س8$",
+    pattern="س8(?:\s|$)([\s\S]*)",
     command=("س8", plugin_category),
            )
 async def tmgif(event):
@@ -152,7 +152,7 @@ async def tmgif(event):
         )
 
 @sbb_b.ar_cmd(
-    pattern="س9$",
+    pattern="س9(?:\s|$)([\s\S]*)",
     command=("س9", plugin_category),
            )
 async def tmgif(event):
