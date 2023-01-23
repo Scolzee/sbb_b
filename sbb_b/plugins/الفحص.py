@@ -123,10 +123,10 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 [
                     Button.url("قنـاة السـورس ⚙️", "https://t.me/Ch_frozen"),
                     Button.url("المطـور 👨🏼‍💻", "https://t.me/Scolze_WA"),
-                ]
+                ],
                 [ 
                     Button.url("مبرمج السورس 👨🏼‍💻", "https://t.me/M0_DW"),
-                ] 
+                ], 
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
@@ -150,4 +150,4 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             await event.answer([result] if result else None)
 
 
-# edit by ~ @RR77R
+# edit by ~ @Scolze_WA
