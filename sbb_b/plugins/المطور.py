@@ -23,7 +23,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             buttons = [
                 [
                     Button.url("𝙎𝘾𝙊𝙇𝙕𝙀", "https://t.me/Scolze_WA"),
-                    Button.url("𝙈𝙊𝘿𝙔", "https://t.me/M0_DW"),
+                    Button.url("𝙈𝙊𝘿𝙔", "https://t.me/PL_AJ"),
                 ],
                 [
                     Button.url("𝙎𝙊𝙐𝙍𝘾𝙀", "https://t.me/ch_frozen"),
